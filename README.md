@@ -1,6 +1,6 @@
 # OffCanvas
 OffCanvas with swipe support
 
-http://toggler.vaseris.lt/
+http://offcanvas.vaseris.lt/
 
-test: http://toggler.vaseris.lt/test
+test: http://offcanvas.vaseris.lt/test
