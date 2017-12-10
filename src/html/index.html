@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--DEV <html class="no-js" lang="lt"> -->
+<html lang="lt">
+    <head>
+        <partial src="partial/_head.html" param-title="OFFCanvas.js"/>
+    </head>
+    <body>
+        <nav class="nav l-group">
+            <div class="l-group__item">
+                <a class="o-hamburger is-active" data-offcanvas href="#nav1"><b>Open right nav</b></a>
+            </div>
+            <div class="l-group__item u-ml-auto u-mr-auto">
+                <a>OFFCanvas.js</a>
+            </div>
+            <div class="l-group__item">
+                <a class="o-hamburger js-trigger-1"><b>Open right nav</b></a>
+            </div>
+        </nav>
+
+        
+        <div class="js-offcanvas menu is-visible is-right" id="nav1">
+            <h2>Right nav</h2>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">Sit accusantium voluptatum voluptate beatae?</a></li>
+                <li><a href="#">Blanditiis placeat iste quibusdam harum.</a></li>
+                <li><a href="#">A tempore laboriosam quod debitis.</a></li>
+                <li><a href="#">Vel iste tempore nesciunt eos!</a></li>
+                <li><a href="#">Facilis iure doloremque numquam magni.</a></li>
+                <li><a href="#">Nam ipsum et ducimus ad.</a></li>
+            </ul>
+        </div>
+        
+        <div class="js-offcanvas menu" id="nav2">
+            <h2>Left nav</h2>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">Voluptatibus, voluptate? Nostrum, asperiores nihil.</a></li>
+                <li><a href="#">Voluptates maxime delectus ex dolorem!</a></li>
+                <li><a href="#">Exercitationem vel consectetur fugit nemo.</a></li>
+                <li><a href="#">Nostrum odio dicta ab voluptate.</a></li>
+                <li><a href="#">Id libero officia fugit qui.</a></li>
+                <li><a href="#">Beatae perspiciatis mollitia iure reprehenderit!</a></li>
+                <li><a href="#">Suscipit veritatis ullam facilis fugit.</a></li>
+                <li><a href="#">Hic aspernatur numquam fuga rerum.</a></li>
+                <li><a href="#">Porro aut accusantium obcaecati illo.</a></li>
+                <li><a href="#">Velit dolorem facilis consequatur officia?</a></li>
+                <li><a href="#">Odio expedita ad officia cumque?</a></li>
+                <li><a href="#">Quaerat quis eum ratione fuga.</a></li>
+                <li><a href="#">Id libero officia fugit qui.</a></li>
+                <li><a href="#">Beatae perspiciatis mollitia iure reprehenderit!</a></li>
+                <li><a href="#">Suscipit veritatis ullam facilis fugit.</a></li>
+                <li><a href="#">Hic aspernatur numquam fuga rerum.</a></li>
+                <li><a href="#">Porro aut accusantium obcaecati illo.</a></li>
+                <li><a href="#">Velit dolorem facilis consequatur officia?</a></li>
+                <li><a href="#">Odio expedita ad officia cumque?</a></li>
+                <li><a href="#">Quaerat quis eum ratione fuga.</a></li>
+            </ul>
+        </div>
+                  
+        <div class="page">
+            <h1>OFFCanvas.js</h1>
+            <p>Quidem numquam nobis ratione odio consectetur ipsa eum sequi dolore velit. Quam eius cumque culpa molestias, consectetur quos necessitatibus veritatis, ab reiciendis iusto doloremque, sint. Sequi nostrum excepturi natus, dicta eum facilis officiis? Sed quis autem a, ut suscipit, et dolore? Quisquam illum non quia, quos at. Repellat dolor adipisci expedita nisi! Cum sit ipsam, facilis enim, ipsum vero id tempore dolores delectus magni, facere aut voluptate libero culpa omnis iusto in quis! Deleniti consectetur quod odit modi quam rerum, deserunt repellendus dolor nobis sunt ipsum voluptatibus suscipit, quae a aperiam eius velit harum eligendi voluptates natus corporis perspiciatis! Pariatur.</p>
+            <p>Architecto nulla eveniet molestias, dignissimos dolores esse iure officia quis delectus, molestiae vero quam maxime recusandae quia voluptatum accusamus porro id cumque! Sequi accusantium nihil sed omnis ducimus vero, nisi minus labore cum dolore, tempore provident laborum esse numquam magnam earum doloremque facere blanditiis similique placeat voluptatum. Quibusdam doloremque quidem fugit cum tenetur est natus consequuntur quaerat eligendi voluptas reiciendis at excepturi odit perferendis, dolor, error soluta nam porro perspiciatis et. Illum sit adipisci illo aperiam architecto dicta magni aspernatur non iure dolore eveniet veritatis ullam quisquam nobis quod, quibusdam eum in similique voluptates officia. Ex delectus sed, praesentium quasi!</p>
+            <p>A, eveniet, quod explicabo nobis dicta eius itaque impedit dolores neque. Vero expedita eos dolorem quasi aut neque cupiditate unde quos odio quo, assumenda, perferendis impedit, autem vitae, animi. Molestiae sequi iste delectus nostrum, quas eum cupiditate similique, nam doloremque nobis nihil blanditiis quibusdam asperiores ipsum voluptate alias! Minima, quia labore temporibus aperiam rem enim repellat blanditiis ipsam vitae reiciendis explicabo corporis nulla culpa quae velit sit alias accusamus! Quasi hic tenetur cupiditate placeat consequuntur asperiores alias architecto libero error ab nisi voluptatibus sed, enim facere dolores ex iusto aperiam sint nesciunt quos a ducimus eius natus pariatur. Laboriosam, minima.</p>
+
+            <h2>Options</h2>
+            <pre><code>var plugin = new OffCanvas(".element" || HTMLElement);
+plugin.hide(force = false);
+plugin.show(force = false);
+plugin.toggle(force = false);
+plugin.isVisible();
+plugin.isTransitioning();</code></pre>
+
+            <h2>Attribute options</h2>
+            <pre><code>&lt;a <b class="u-color-secondary">data-offcanvas href="#offcanvas"</b>&gt;Trigger&lt;/a&gt;
+&lt;button data-offcanvas <b class="u-color-secondary">data-offcanvas-target="#offcanvas"</b>&gt;Trigger&lt;/button&gt;
+&lt;a <b class="u-color-secondary">data-offcanvas="toggle"</b> href="..."&gt;Trigger&lt;/a&gt;
+&lt;a <b class="u-color-secondary">data-offcanvas="show"</b> href="..."&gt;Trigger&lt;/a&gt;
+&lt;a <b class="u-color-secondary">data-offcanvas="hide"</b> href="..."&gt;Trigger&lt;/a&gt;
+&lt;a data-offcanvas <b class="u-color-secondary">data-offcanvas-force</b> href="..."&gt;Trigger&lt;/a&gt;</code></pre>
+
+            <h2>Dolor sit amet consectetur, adipisicing elit. Est, necessitatibus</h2>
+            <pre><code>&lt;a class="o-hamburger is-active" <b class="u-color-secondary">data-offcanvas="toggle" href="#nav1"</b>&gt;&lt;b&gt;Open right nav&lt;/b&gt;&lt;/a&gt;</code></pre>
+            <pre><code>var trigger = document.querySelector('.js-trigger-1');
+var nav = document.querySelector('#nav2');
+plugin = new OffCanvas(nav);
+trigger.addEventListener('click', function(){
+    plugin.toggle();
+});
+nav.addEventListener('offcanvas.pre.show', function(){
+    trigger.classList.add('is-active');
+});
+nav.addEventListener('offcanvas.pre.hide', function(){
+    trigger.classList.remove('is-active');
+});</code></pre>
+
+            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+            <p>Soluta commodi quisquam modi fugiat voluptas, nemo nam saepe libero, dolores, porro nulla veniam praesentium qui assumenda possimus similique rem cum tempora. Atque, perspiciatis vel alias dolorum officiis hic rerum! Quod voluptatem porro quam, vero vel sequi consequuntur architecto exercitationem voluptatibus deserunt a, accusantium omnis quisquam expedita unde repellendus id vitae nam ipsam, animi natus, sint possimus error. Expedita quaerat eius quo explicabo. Molestiae odit assumenda consequuntur cum nemo ipsa dignissimos aliquam, repellat, nihil porro fugit cupiditate commodi quaerat, laudantium, tempore eum nisi eaque minus. Et sint est, velit voluptatum facere aliquam debitis itaque ratione pariatur, dolorem ea illo nostrum!</p>
+            <p>Rem quis asperiores ipsum accusamus qui dolore laborum nesciunt quisquam, architecto nam cumque saepe soluta, cupiditate aut. Ipsum optio debitis natus laborum tempora, cum ipsam cumque ea fugiat sequi beatae praesentium neque voluptatum nulla rem accusantium. Veniam delectus sint quos labore, vero perferendis, quibusdam nobis in saepe ea voluptatibus molestiae ducimus aliquid amet sed dicta molestias laudantium eligendi! Tempore minima earum dolorem ex corporis quaerat, repellat nobis voluptates atque sit facere quia reiciendis illo ipsa deleniti officiis, pariatur vitae eligendi praesentium beatae repellendus, soluta asperiores. Esse consequuntur mollitia sapiente nesciunt nobis, magni et similique officia quasi iusto, consequatur est dolorem.</p>
+            <p>Maiores odit, accusamus ea sed fugit asperiores perferendis iste animi illum blanditiis veniam quis minima tempora repudiandae quidem nam sint fuga a necessitatibus rerum voluptatum voluptates nobis laudantium hic? Odio similique officia, repellendus ex incidunt voluptatibus perferendis fugiat ut deleniti minima corrupti doloribus, nemo nisi amet quas culpa cum natus, iure a, ea autem minus unde veniam inventore ullam! Illum error dicta accusantium eligendi suscipit magni reprehenderit nihil officia amet veritatis molestias expedita ut autem alias, quam iusto possimus delectus vitae, inventore nobis iste laborum ullam sed esse. Aliquid quae dicta et explicabo illo voluptatibus ab. Dolores doloribus, corrupti excepturi.</p>
+
+            <h3>Lorem, ipsum dolor</h3>
+            <p>Maiores, vero neque aut numquam tempore rem fuga, non doloremque ducimus ullam sapiente assumenda sed quia quo magnam quibusdam odit necessitatibus quae illo, cupiditate eos enim temporibus. In nam impedit natus, beatae officiis sit recusandae, suscipit placeat. Error provident sed sapiente sequi perferendis possimus iste architecto, minima. Odio eos, corrupti sunt autem sed quasi ducimus fuga adipisci ratione veniam quas voluptas ipsam cumque eligendi alias, tenetur itaque. Voluptas obcaecati error assumenda cum. Odio, possimus optio vitae atque quisquam repudiandae dignissimos itaque neque est perspiciatis laboriosam eaque fugiat iusto consequatur, magni ratione a necessitatibus culpa unde, nobis aliquam. Aliquam laudantium, eaque.</p>
+            <p>Facilis quibusdam, ratione soluta maiores esse incidunt nihil, omnis, laborum architecto doloremque quae! Beatae, ex voluptas voluptates exercitationem, repellat voluptatibus! Nisi quo error, incidunt ad placeat eum ratione quidem explicabo quasi excepturi facilis, iusto quam officia molestias, repellat velit iste. Placeat recusandae, qui at voluptates natus. Aspernatur non officiis qui suscipit ex libero iusto accusamus, itaque? Distinctio possimus nesciunt maiores fugit omnis praesentium architecto delectus dicta porro quisquam, accusantium maxime culpa placeat temporibus minima recusandae nihil dolorem magni quasi natus quaerat, molestiae nobis dolore fugiat! Beatae esse repudiandae ipsam dolore, quisquam, cum optio enim commodi qui, dicta amet quos itaque.</p>
+
+            <h3>Lorem, ipsum dolor</h3>
+            <p>Nam quasi cupiditate praesentium vero sunt dignissimos et ab suscipit accusantium similique facere ipsa architecto, odio recusandae nihil sapiente aliquid nemo sit porro libero sequi ut quos. Debitis aspernatur voluptas eum modi temporibus vero, neque ipsam possimus nisi. Ad pariatur aliquid est atque, animi dolores corporis! Impedit esse assumenda ipsam deleniti, voluptatum enim, voluptates. Asperiores pariatur vero quidem accusamus provident expedita odio sint doloribus dignissimos. Dolore, hic reprehenderit aliquam unde maxime est error numquam vitae nostrum ad quod exercitationem pariatur nemo molestiae et tempora. Beatae perferendis expedita, quod natus illo, quo cumque ea aliquam officia molestiae temporibus cum quam magnam.</p>
+            <p>Non iste, voluptas animi, iure neque deserunt rerum nulla qui inventore, excepturi deleniti veniam similique suscipit molestias in autem quos. Facere perspiciatis obcaecati necessitatibus soluta maxime nostrum natus laborum neque minus, nobis consectetur placeat nulla odio, quas, mollitia, quo eveniet. Sint quibusdam tenetur facere, dolores ullam quia natus, perspiciatis aut dicta illum officia, magnam aliquid, minus. Sapiente quibusdam rem cum cumque nesciunt ipsum magni ex perferendis, iusto fuga aliquid dignissimos ea veniam quisquam. At vel tempore rem, incidunt consequuntur reprehenderit numquam a. Quos reiciendis accusantium, beatae quisquam est libero, porro similique veniam repudiandae, non rem repellendus animi nostrum laudantium ad?</p>
+        </div>
+    </body>
+</html>

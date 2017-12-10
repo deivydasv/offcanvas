@@ -1,0 +1,71 @@
+$off-canvas-z-index: 9000;
+$off-canvas-width: 260px;
+$off-canvas-animation-duration: .5s;
+
+.js-offcanvas { 
+    z-index: $off-canvas-z-index + 3;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    width: $off-canvas-width;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    will-change: transform;
+    background-color: #fff;
+    
+    left: 0;
+    transform: translateX(-100%);
+
+    &.is-right {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
+    } 
+
+    &.is-visible {
+        transform: none;
+        ~ .js-offcanvas-overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
+    &.is-transitioning {
+        transition: transform $off-canvas-animation-duration ease;
+        
+        ~ .js-offcanvas-overlay {
+            transition: opacity $off-canvas-animation-duration ease,
+                        visibility 0s ease $off-canvas-animation-duration;
+        }
+        &.is-visible {
+            ~ .js-offcanvas-overlay {
+                transition: opacity $off-canvas-animation-duration ease;
+            }
+        }
+    }
+    
+    &-overlay {
+        z-index: $off-canvas-z-index + 1;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0; 
+        right: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;   
+        opacity: 0;
+        
+    }
+}
+
+/* STYLING */
+
+.js-offcanvas {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    &-overlay {
+        background: rgba(0,0,0,0.2);
+    }
+}

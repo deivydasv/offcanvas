@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <title>OFFCanvas.js</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="../dist/css/style.css" />
+  <link rel="stylesheet" href="../dist/css/offcanvas.css" />
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+  
+</head>
+
+<body>
+  <nav class="nav l-group">
+    <div class="l-group__item"> <a id="trigger1" class="o-hamburger" data-offcanvas="toggle" href="#nav1"><b>Open right nav</b></a>
+    </div>
+    <div class="l-group__item u-ml-auto u-mr-auto"> <a>OFFCanvas.js</a>
+    </div>
+    <div class="l-group__item"> <a id="trigger2" class="o-hamburger js-trigger-1"><b>Open right nav</b></a>
+    </div>
+  </nav>
+  <div class="js-offcanvas menu is-visible is-right" id="nav1">
+    <h2>Right nav</h2>
+    <ul>
+      <li><a href="#">Lorem ipsum dolor sit amet.</a>
+      </li>
+      <li><a href="#">Sit accusantium voluptatum voluptate beatae?</a>
+      </li>
+      <li><a href="#">Blanditiis placeat iste quibusdam harum.</a>
+      </li>
+      <li><a href="#">A tempore laboriosam quod debitis.</a>
+      </li>
+      <li><a href="#">Vel iste tempore nesciunt eos!</a>
+      </li>
+      <li><a href="#">Facilis iure doloremque numquam magni.</a>
+      </li>
+      <li><a href="#">Nam ipsum et ducimus ad.</a>
+      </li>
+    </ul>
+  </div>
+  <div class="menu" id="nav2">
+    <h2>Left nav</h2>
+    <ul>
+      <li><a href="#">Lorem ipsum dolor sit amet.</a>
+      </li>
+      <li><a href="#">Voluptatibus, voluptate? Nostrum, asperiores nihil.</a>
+      </li>
+      <li><a href="#">Voluptates maxime delectus ex dolorem!</a>
+      </li>
+      <li><a href="#">Exercitationem vel consectetur fugit nemo.</a>
+      </li>
+      <li><a href="#">Nostrum odio dicta ab voluptate.</a>
+      </li>
+      <li><a href="#">Id libero officia fugit qui.</a>
+      </li>
+      <li><a href="#">Beatae perspiciatis mollitia iure reprehenderit!</a>
+      </li>
+      <li><a href="#">Suscipit veritatis ullam facilis fugit.</a>
+      </li>
+      <li><a href="#">Hic aspernatur numquam fuga rerum.</a>
+      </li>
+      <li><a href="#">Porro aut accusantium obcaecati illo.</a>
+      </li>
+      <li><a href="#">Velit dolorem facilis consequatur officia?</a>
+      </li>
+      <li><a href="#">Odio expedita ad officia cumque?</a>
+      </li>
+      <li><a href="#">Quaerat quis eum ratione fuga.</a>
+      </li>
+      <li><a href="#">Id libero officia fugit qui.</a>
+      </li>
+      <li><a href="#">Beatae perspiciatis mollitia iure reprehenderit!</a>
+      </li>
+      <li><a href="#">Suscipit veritatis ullam facilis fugit.</a>
+      </li>
+      <li><a href="#">Hic aspernatur numquam fuga rerum.</a>
+      </li>
+      <li><a href="#">Porro aut accusantium obcaecati illo.</a>
+      </li>
+      <li><a href="#">Velit dolorem facilis consequatur officia?</a>
+      </li>
+      <li><a href="#">Odio expedita ad officia cumque?</a>
+      </li>
+      <li><a href="#">Quaerat quis eum ratione fuga.</a>
+      </li>
+    </ul>
+  </div>
+  <div class="page">
+    
+    <div id="mocha"></div>
+
+    <a data-offcanvas="show"   href="#nav1" id="t1a"></a>
+    <a data-offcanvas="hide"   href="#nav1" id="t1b"></a>
+    <a data-offcanvas="toggle" href="#nav1" id="t1c"></a>
+    <a data-offcanvas href="#nav1" id="t1d"></a>
+    
+    <a data-offcanvas="show"   href="#nav1" id="t2a" data-offcanvas-force="1"></a>
+    <a data-offcanvas="hide"   href="#nav1" id="t2b" data-offcanvas-force="true"></a>
+    <a data-offcanvas="toggle" href="#nav1" id="t2c" data-offcanvas-force="yes"></a>
+    <a data-offcanvas          href="#nav1" id="t2d" data-offcanvas-force></a>
+    
+    <button data-offcanvas data-offcanvas-target="#nav1" id="t3" data-offcanvas-force></button>
+
+
+  </div>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/chai/chai.js"></script>
+  <script>
+    mocha.setup({
+        ui: 'bdd',
+        timeout: 2000,
+    });
+  </script>
+
+  <script src="../dist/js/offcanvas.js"></script>
+  <script src="test.js"></script>
+  <script>
+     window.onload = function() {
+         setTimeout(function(){
+            // mocha.checkLeaks();
+            // mocha.globals(['OffCanvas', 'chai']);
+             mocha.run();
+         }, 500);
+     }
+  </script>
+
+</body>
+</html>
