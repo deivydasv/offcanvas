@@ -1,0 +1,7 @@
+/*!
+ * OffCanvas (https://github.com/deivydasv/offcanvas/)
+ * Version: 1.0.0
+ * Last update on: 2017-12-10 14:54:28
+ * Author: Deivydas Vaseris
+ */
+.js-offcanvas,.js-offcanvas-overlay{position:fixed;left:0;top:0;bottom:0;height:100%}.js-offcanvas{overflow-y:auto;-webkit-overflow-scrolling:touch;will-change:transform;-webkit-transform:translateX(-100%);transform:translateX(-100%);z-index:9003;width:260px}.js-offcanvas.is-right{left:auto;right:0;-webkit-transform:translateX(100%);transform:translateX(100%)}.js-offcanvas.is-visible{-webkit-transform:none;transform:none}.js-offcanvas.is-visible~.js-offcanvas-overlay{visibility:visible;opacity:1}.js-offcanvas.is-transitioning{-webkit-transition:-webkit-transform .5s ease;transition:transform .5s ease;transition:transform .5s ease,-webkit-transform .5s ease}.js-offcanvas.is-transitioning~.js-offcanvas-overlay{-webkit-transition:opacity .5s ease,visibility 0s ease .5s;transition:opacity .5s ease,visibility 0s ease .5s}.js-offcanvas.is-transitioning.is-visible~.js-offcanvas-overlay{-webkit-transition:opacity .5s ease;transition:opacity .5s ease}.js-offcanvas-overlay{z-index:9001;right:0;width:100%;visibility:hidden;opacity:0}.js-offcanvas{background-color:#fff;-webkit-box-shadow:0 0 5px rgba(0,0,0,.2);box-shadow:0 0 5px rgba(0,0,0,.2)}.js-offcanvas-overlay{background:rgba(0,0,0,.2)}

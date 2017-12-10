@@ -1,7 +1,7 @@
 /*!
  * OffCanvas (https://github.com/deivydasv/offcanvas/)
- * Version: 0.0.1
- * Last update on: 2017-12-10 14:46:37
+ * Version: 1.0.0
+ * Last update on: 2017-12-10 14:54:28
  * Author: Deivydas Vaseris
  */
 
